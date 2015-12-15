@@ -1,4 +1,8 @@
 {
+    "plugins": [
+        "jscs-jsdoc"
+    ],
+    "additionalRules": [ "core/test/utils/jscs-rules/*.js" ],
     "requireCurlyBraces": [
         "if",
         "else",
@@ -29,6 +33,9 @@
         "beforeOpeningRoundBrace": true
     },
     "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInAnonymousFunctionExpression": {
         "beforeOpeningRoundBrace": true
     },
     "requireMultipleVarDecl": "onevar",
@@ -62,7 +69,7 @@
     "safeContextKeyword": ["self"],
     "requireDotNotation": true,
     "disallowYodaConditions": true,
-    "validateJSDoc": {
+    "jsDoc": {
         "checkParamNames": true,
         "checkRedundantParams": true,
         "requireParamTypes": true
